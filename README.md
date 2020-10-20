@@ -46,8 +46,13 @@ ReactDOM.render(
 
 * Se deberia tener por separado el codigo html (etiquetas hmtl) y la logica (codificacion) para poder serguir unas buenas practicas
 
-* Se podria crear una funcion como "TemplateHTML()" el cual contenga el HTML de la web con las etiquetas y esta funcion tenga como parametros las propiedas del control HTML a dibujar. 
-* Por Ejm se crea la funcion "TemplateHTML()":
+```html
+const funcionHTML()    { .... }
+
+const funcionLogica()  { .... }
+```
+
+* Se podria crear una funcion como "TemplateHTML()" el cual contenga el HTML de la web con las etiquetas y esta funcion tenga como parametros las propiedas del control HTML a dibujar. Por Ejm:
 
 ```html
 const TemplateHTML = (prop) => [
@@ -56,7 +61,7 @@ const TemplateHTML = (prop) => [
 ];
 ```
 
-* A su vez esta funcion "TemplateHTML()" se llamaria en el "render()" de la siguiente manera:
+* A su vez esta funcion "TemplateHTML()" se llamaria en el "render()" enviandole los parametros de "Nombre" (name) y "Pais" (location) de la siguiente manera:
 
 ```html
   render() {
