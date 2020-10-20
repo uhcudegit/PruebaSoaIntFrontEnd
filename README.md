@@ -38,8 +38,15 @@ ReactDOM.render(
 
 ## Analisis del codigo en ReactJs:
 
-* Se deberia crear una funcion de template a reutilizar las etiquetas de HTML y tener por separado el template con la logica 
-* 
+* Se deberia tener por separado el codigo html y la logica.
+* Se podria crear una funcion como "TemplateHTML()" el cual contenga el HTML de la web cpns etiquetas y esta funcion tenga tenga como parametros las propiedas del control HTML a dibujar. Ejm:
+
+```html
+const TemplateHTML = (prop) => [
+    <h1 key="name">{`Nombre: ${prop.name}`}</h1>,
+    <h2 key="location">{`País: ${prop.location}`}</h2>
+];
+```
  
 
 
